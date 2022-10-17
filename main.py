@@ -140,7 +140,7 @@ def alg_sort_stack(infix: str) -> INTERMEDIATE:
                 process_num()
             else:
                 raise ValueError("Запись оканчивается на оператор")
-
+                
         # проверка на закрывающую скобку
         for op in reversed(stack):
             if op == OPEN_BRACKET:
